@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D32953611CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D32953461CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.m */; };
+		D32953621CE4A501001B4D76 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D32953481CE4A501001B4D76 /* TPKeyboardAvoidingTableView.m */; };
+		D32953631CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D329534A1CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		D32953641CE4A501001B4D76 /* YVButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D329534E1CE4A501001B4D76 /* YVButtonCell.swift */; };
+		D32953651CE4A501001B4D76 /* YVButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D329534F1CE4A501001B4D76 /* YVButtonCell.xib */; };
+		D32953661CE4A501001B4D76 /* YVLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32953511CE4A501001B4D76 /* YVLabelCell.swift */; };
+		D32953671CE4A501001B4D76 /* YVLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32953521CE4A501001B4D76 /* YVLabelCell.xib */; };
+		D32953681CE4A501001B4D76 /* YVLabelTextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32953541CE4A501001B4D76 /* YVLabelTextInputCell.swift */; };
+		D32953691CE4A501001B4D76 /* YVLabelTextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32953551CE4A501001B4D76 /* YVLabelTextInputCell.xib */; };
+		D329536A1CE4A501001B4D76 /* YVTextOnlyInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32953581CE4A501001B4D76 /* YVTextOnlyInputCell.swift */; };
+		D329536B1CE4A501001B4D76 /* YVTextOnlyInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32953591CE4A501001B4D76 /* YVTextOnlyInputCell.xib */; };
+		D329536C1CE4A501001B4D76 /* YVTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D329535B1CE4A501001B4D76 /* YVTableRow.swift */; };
+		D329536D1CE4A501001B4D76 /* YVTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D329535C1CE4A501001B4D76 /* YVTableSection.swift */; };
+		D329536E1CE4A501001B4D76 /* YVTableForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D329535E1CE4A501001B4D76 /* YVTableForm.swift */; };
+		D329536F1CE4A501001B4D76 /* YVTextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32953601CE4A501001B4D76 /* YVTextFieldValidator.swift */; };
+		D3C3355D1CE05235003DFFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3355C1CE05235003DFFE6 /* AppDelegate.swift */; };
+		D3C3355F1CE05235003DFFE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3355E1CE05235003DFFE6 /* ViewController.swift */; };
+		D3C335621CE05235003DFFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C335601CE05235003DFFE6 /* Main.storyboard */; };
+		D3C335641CE05235003DFFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C335631CE05235003DFFE6 /* Assets.xcassets */; };
+		D3C335671CE05235003DFFE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C335651CE05235003DFFE6 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D32953451CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		D32953461CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		D32953471CE4A501001B4D76 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		D32953481CE4A501001B4D76 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		D32953491CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		D329534A1CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		D329534E1CE4A501001B4D76 /* YVButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVButtonCell.swift; sourceTree = "<group>"; };
+		D329534F1CE4A501001B4D76 /* YVButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVButtonCell.xib; sourceTree = "<group>"; };
+		D32953511CE4A501001B4D76 /* YVLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVLabelCell.swift; sourceTree = "<group>"; };
+		D32953521CE4A501001B4D76 /* YVLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVLabelCell.xib; sourceTree = "<group>"; };
+		D32953541CE4A501001B4D76 /* YVLabelTextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVLabelTextInputCell.swift; sourceTree = "<group>"; };
+		D32953551CE4A501001B4D76 /* YVLabelTextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVLabelTextInputCell.xib; sourceTree = "<group>"; };
+		D32953581CE4A501001B4D76 /* YVTextOnlyInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVTextOnlyInputCell.swift; sourceTree = "<group>"; };
+		D32953591CE4A501001B4D76 /* YVTextOnlyInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YVTextOnlyInputCell.xib; sourceTree = "<group>"; };
+		D329535B1CE4A501001B4D76 /* YVTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVTableRow.swift; sourceTree = "<group>"; };
+		D329535C1CE4A501001B4D76 /* YVTableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVTableSection.swift; sourceTree = "<group>"; };
+		D329535E1CE4A501001B4D76 /* YVTableForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVTableForm.swift; sourceTree = "<group>"; };
+		D32953601CE4A501001B4D76 /* YVTextFieldValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVTextFieldValidator.swift; sourceTree = "<group>"; };
+		D3C335591CE05235003DFFE6 /* YVSwiftTableFormsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVSwiftTableFormsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C3355C1CE05235003DFFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3C3355E1CE05235003DFFE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3C335611CE05235003DFFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3C335631CE05235003DFFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3C335661CE05235003DFFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3C335681CE05235003DFFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3C335561CE05235003DFFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D32953431CE4A501001B4D76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D32953441CE4A501001B4D76 /* TPKeyboardAvoidingTableView */,
+				D329534B1CE4A501001B4D76 /* YVSwiftTableForms */,
+			);
+			name = Resources;
+			path = YVSwiftTableFormsExample/Resources;
+			sourceTree = "<group>";
+		};
+		D32953441CE4A501001B4D76 /* TPKeyboardAvoidingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D32953451CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.h */,
+				D32953461CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.m */,
+				D32953471CE4A501001B4D76 /* TPKeyboardAvoidingTableView.h */,
+				D32953481CE4A501001B4D76 /* TPKeyboardAvoidingTableView.m */,
+				D32953491CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				D329534A1CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoidingTableView;
+			sourceTree = "<group>";
+		};
+		D329534B1CE4A501001B4D76 /* YVSwiftTableForms */ = {
+			isa = PBXGroup;
+			children = (
+				D329534C1CE4A501001B4D76 /* YVCells */,
+				D329535A1CE4A501001B4D76 /* YVClasses */,
+				D329535D1CE4A501001B4D76 /* YVControllers */,
+				D329535F1CE4A501001B4D76 /* YVSubClasses */,
+			);
+			path = YVSwiftTableForms;
+			sourceTree = "<group>";
+		};
+		D329534C1CE4A501001B4D76 /* YVCells */ = {
+			isa = PBXGroup;
+			children = (
+				D329534D1CE4A501001B4D76 /* YVButtonCell */,
+				D32953501CE4A501001B4D76 /* YVLabelCell */,
+				D32953531CE4A501001B4D76 /* YVLabelTextInputCell */,
+				D32953561CE4A501001B4D76 /* YVTextOnlyInputCell */,
+			);
+			path = YVCells;
+			sourceTree = "<group>";
+		};
+		D329534D1CE4A501001B4D76 /* YVButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				D329534E1CE4A501001B4D76 /* YVButtonCell.swift */,
+				D329534F1CE4A501001B4D76 /* YVButtonCell.xib */,
+			);
+			path = YVButtonCell;
+			sourceTree = "<group>";
+		};
+		D32953501CE4A501001B4D76 /* YVLabelCell */ = {
+			isa = PBXGroup;
+			children = (
+				D32953511CE4A501001B4D76 /* YVLabelCell.swift */,
+				D32953521CE4A501001B4D76 /* YVLabelCell.xib */,
+			);
+			path = YVLabelCell;
+			sourceTree = "<group>";
+		};
+		D32953531CE4A501001B4D76 /* YVLabelTextInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				D32953541CE4A501001B4D76 /* YVLabelTextInputCell.swift */,
+				D32953551CE4A501001B4D76 /* YVLabelTextInputCell.xib */,
+			);
+			path = YVLabelTextInputCell;
+			sourceTree = "<group>";
+		};
+		D32953561CE4A501001B4D76 /* YVTextOnlyInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				D32953571CE4A501001B4D76 /* YVButtonCell */,
+				D32953581CE4A501001B4D76 /* YVTextOnlyInputCell.swift */,
+				D32953591CE4A501001B4D76 /* YVTextOnlyInputCell.xib */,
+			);
+			path = YVTextOnlyInputCell;
+			sourceTree = "<group>";
+		};
+		D32953571CE4A501001B4D76 /* YVButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YVButtonCell;
+			sourceTree = "<group>";
+		};
+		D329535A1CE4A501001B4D76 /* YVClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D329535B1CE4A501001B4D76 /* YVTableRow.swift */,
+				D329535C1CE4A501001B4D76 /* YVTableSection.swift */,
+			);
+			path = YVClasses;
+			sourceTree = "<group>";
+		};
+		D329535D1CE4A501001B4D76 /* YVControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D329535E1CE4A501001B4D76 /* YVTableForm.swift */,
+			);
+			path = YVControllers;
+			sourceTree = "<group>";
+		};
+		D329535F1CE4A501001B4D76 /* YVSubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D32953601CE4A501001B4D76 /* YVTextFieldValidator.swift */,
+			);
+			path = YVSubClasses;
+			sourceTree = "<group>";
+		};
+		D3C335501CE05235003DFFE6 = {
+			isa = PBXGroup;
+			children = (
+				D32953431CE4A501001B4D76 /* Resources */,
+				D3C3355B1CE05235003DFFE6 /* YVSwiftTableFormsExample */,
+				D3C3355A1CE05235003DFFE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3C3355A1CE05235003DFFE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3C335591CE05235003DFFE6 /* YVSwiftTableFormsExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3C3355B1CE05235003DFFE6 /* YVSwiftTableFormsExample */ = {
+			isa = PBXGroup;
+			children = (
+				D3C3355C1CE05235003DFFE6 /* AppDelegate.swift */,
+				D3C3355E1CE05235003DFFE6 /* ViewController.swift */,
+				D3C335601CE05235003DFFE6 /* Main.storyboard */,
+				D3C335631CE05235003DFFE6 /* Assets.xcassets */,
+				D3C335651CE05235003DFFE6 /* LaunchScreen.storyboard */,
+				D3C335681CE05235003DFFE6 /* Info.plist */,
+			);
+			path = YVSwiftTableFormsExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3C335581CE05235003DFFE6 /* YVSwiftTableFormsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3C3356B1CE05235003DFFE6 /* Build configuration list for PBXNativeTarget "YVSwiftTableFormsExample" */;
+			buildPhases = (
+				D3C335551CE05235003DFFE6 /* Sources */,
+				D3C335561CE05235003DFFE6 /* Frameworks */,
+				D3C335571CE05235003DFFE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YVSwiftTableFormsExample;
+			productName = YVSwiftTableFormsExample;
+			productReference = D3C335591CE05235003DFFE6 /* YVSwiftTableFormsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3C335511CE05235003DFFE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yash;
+				TargetAttributes = {
+					D3C335581CE05235003DFFE6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D3C335541CE05235003DFFE6 /* Build configuration list for PBXProject "YVSwiftTableFormsExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3C335501CE05235003DFFE6;
+			productRefGroup = D3C3355A1CE05235003DFFE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3C335581CE05235003DFFE6 /* YVSwiftTableFormsExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3C335571CE05235003DFFE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D329536B1CE4A501001B4D76 /* YVTextOnlyInputCell.xib in Resources */,
+				D32953651CE4A501001B4D76 /* YVButtonCell.xib in Resources */,
+				D32953691CE4A501001B4D76 /* YVLabelTextInputCell.xib in Resources */,
+				D3C335671CE05235003DFFE6 /* LaunchScreen.storyboard in Resources */,
+				D3C335641CE05235003DFFE6 /* Assets.xcassets in Resources */,
+				D32953671CE4A501001B4D76 /* YVLabelCell.xib in Resources */,
+				D3C335621CE05235003DFFE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3C335551CE05235003DFFE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D329536D1CE4A501001B4D76 /* YVTableSection.swift in Sources */,
+				D329536F1CE4A501001B4D76 /* YVTextFieldValidator.swift in Sources */,
+				D329536A1CE4A501001B4D76 /* YVTextOnlyInputCell.swift in Sources */,
+				D32953661CE4A501001B4D76 /* YVLabelCell.swift in Sources */,
+				D329536C1CE4A501001B4D76 /* YVTableRow.swift in Sources */,
+				D32953681CE4A501001B4D76 /* YVLabelTextInputCell.swift in Sources */,
+				D32953611CE4A501001B4D76 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				D32953621CE4A501001B4D76 /* TPKeyboardAvoidingTableView.m in Sources */,
+				D329536E1CE4A501001B4D76 /* YVTableForm.swift in Sources */,
+				D3C3355F1CE05235003DFFE6 /* ViewController.swift in Sources */,
+				D3C3355D1CE05235003DFFE6 /* AppDelegate.swift in Sources */,
+				D32953641CE4A501001B4D76 /* YVButtonCell.swift in Sources */,
+				D32953631CE4A501001B4D76 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3C335601CE05235003DFFE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3C335611CE05235003DFFE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3C335651CE05235003DFFE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3C335661CE05235003DFFE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3C335691CE05235003DFFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3C3356A1CE05235003DFFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3C3356C1CE05235003DFFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YVSwiftTableFormsExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ig.YVSwiftTableFormsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3C3356D1CE05235003DFFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YVSwiftTableFormsExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ig.YVSwiftTableFormsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3C335541CE05235003DFFE6 /* Build configuration list for PBXProject "YVSwiftTableFormsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3C335691CE05235003DFFE6 /* Debug */,
+				D3C3356A1CE05235003DFFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3C3356B1CE05235003DFFE6 /* Build configuration list for PBXNativeTarget "YVSwiftTableFormsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3C3356C1CE05235003DFFE6 /* Debug */,
+				D3C3356D1CE05235003DFFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3C335511CE05235003DFFE6 /* Project object */;
+}

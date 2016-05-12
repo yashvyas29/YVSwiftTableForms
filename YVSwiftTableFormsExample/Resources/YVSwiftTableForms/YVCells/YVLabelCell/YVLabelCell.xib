@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="YVLabelCell" customModule="YVSwiftTableFormsExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="im6-bh-a7X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ixy-e0-YOP">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3HU-6w-nnl"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="im6-bh-a7X" secondAttribute="trailing" id="Aa4-XO-EK2"/>
+                    <constraint firstAttribute="bottom" secondItem="ixy-e0-YOP" secondAttribute="bottom" id="BNb-j1-u6L"/>
+                    <constraint firstItem="im6-bh-a7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CKf-6y-25x"/>
+                    <constraint firstItem="ixy-e0-YOP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Imf-Vv-73m"/>
+                    <constraint firstAttribute="bottom" secondItem="im6-bh-a7X" secondAttribute="bottom" id="YUQ-0A-a7Y"/>
+                    <constraint firstAttribute="trailing" secondItem="ixy-e0-YOP" secondAttribute="trailing" id="cfM-Fn-bHD"/>
+                    <constraint firstItem="im6-bh-a7X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oNm-q0-OfQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgVwBackground" destination="im6-bh-a7X" id="uhN-Zi-wJg"/>
+                <outlet property="imgVwSeparator" destination="ixy-e0-YOP" id="MF6-i9-VYz"/>
+            </connections>
+            <point key="canvasLocation" x="370" y="376"/>
+        </tableViewCell>
+    </objects>
+</document>
