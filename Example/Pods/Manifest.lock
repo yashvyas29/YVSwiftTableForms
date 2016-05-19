@@ -1,0 +1,19 @@
+PODS:
+  - TPKeyboardAvoiding (1.3)
+  - YVSwiftTableForms (0.1.0):
+    - TPKeyboardAvoiding
+
+DEPENDENCIES:
+  - YVSwiftTableForms (from `../`)
+
+EXTERNAL SOURCES:
+  YVSwiftTableForms:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  YVSwiftTableForms: 0c5d5d52f9cc3fd9a5d5d72bca7951cdefce01db
+
+PODFILE CHECKSUM: ace39131337a9f954a803e84f42d54fa2f258434
+
+COCOAPODS: 1.0.0

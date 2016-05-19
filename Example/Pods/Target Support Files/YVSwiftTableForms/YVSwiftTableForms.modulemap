@@ -1,0 +1,6 @@
+framework module YVSwiftTableForms {
+  umbrella header "YVSwiftTableForms-umbrella.h"
+
+  export *
+  module * { export * }
+}

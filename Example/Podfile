@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YVSwiftTableForms_Example' do
+  pod 'YVSwiftTableForms', :path => '../'
+
+  target 'YVSwiftTableForms_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

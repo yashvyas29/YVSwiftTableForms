@@ -1,0 +1,1083 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016D615A5A2BB590840746799097520A /* Pods-YVSwiftTableForms_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 997CDB0B99497D2499713FE4E1A6C4E2 /* Pods-YVSwiftTableForms_Example-dummy.m */; };
+		040A9CC45F61479E8042706C77309F85 /* YVTableForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC50797F7CDC9565C84E319E8BD9CA /* YVTableForm.swift */; };
+		09F18287FCB0A7D401B49C82580852BF /* YVTextOnlyInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85588A59CEBE266509EB0FC7F5EEEC7A /* YVTextOnlyInputCell.xib */; };
+		102855F0DFA9FA3B8B20A245FA79C62A /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1385C9F1592D20AF96F2FC30363FEC2F /* YVLabelTextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291EA00335F48BD7179FEF5496A07EE /* YVLabelTextInputCell.xib */; };
+		22487946B9D95E05D20399ADF38FBA63 /* YVSwiftTableForms-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9A7F89C56078351412A4D54428E9F3 /* YVSwiftTableForms-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		265E87C960F24E436C0AF242B62BA0CA /* Pods-YVSwiftTableForms_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9C526ECEE921EB230CFE4ED9BB4CF7 /* Pods-YVSwiftTableForms_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B596B0819F319B74F9F3CC5C0FD2A68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3973E90B2E6090AA4D6E3D10309B022 /* Foundation.framework */; };
+		4884AF48C388BC388CF2E2F938F63C67 /* Pods-YVSwiftTableForms_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50058558026EA132853DD023A680EE40 /* Pods-YVSwiftTableForms_Tests-dummy.m */; };
+		512EF8A906E40EC317264142FD9E9BBD /* YVLabelTextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EB548B3B25E8DC102834D224426CBA /* YVLabelTextInputCell.swift */; };
+		535FAE4FCB97FCDA13DC4804FD42B6EA /* YVTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD2FB9010A84237955D0D05DC729CD /* YVTableRow.swift */; };
+		63B2F7D81A1CF18CC5A330CB67A021A6 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		669A451435ED2BBDE29778EE28DF36B9 /* YVSwiftTableForms.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09CCB1E84513D605D08390DD1B8A4378 /* YVSwiftTableForms.bundle */; };
+		70EC80501C00FFDFBF0C1D49968A4BB2 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF8162B14477CA4E80F0408DCD72542 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		719DA40E0EBB252EE07BF71A7B153112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3973E90B2E6090AA4D6E3D10309B022 /* Foundation.framework */; };
+		71AEF9DBD6A5970DD3746902C5FCD5D7 /* YVTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D2F2B167C2FFD38A43C773F5DA02F /* YVTableSection.swift */; };
+		729A44EDD3DB3F76755BA7BEFC3C8F6A /* YVTextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B17AD2F2E00A7E57270C65C680F33F /* YVTextFieldValidator.swift */; };
+		74D2687F41C6496C8305EF38406C6526 /* TPKeyboardAvoiding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AC6D8E94C701B2ABDAE4871CF616D7 /* TPKeyboardAvoiding.framework */; };
+		806AE8A67A008B3553D12F0E63B6F687 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89ADA83F6E8073798219BA1110793B3E /* YVTextOnlyInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C158B9C4F353943632908501524F7A8E /* YVTextOnlyInputCell.swift */; };
+		8E449128CDE3EFC8BFEBD9FF5CF7D96F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3973E90B2E6090AA4D6E3D10309B022 /* Foundation.framework */; };
+		8E96A1D7D91C90FE7118E55AAB5347F4 /* YVButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792BA22F942EE2FB17CB9D8915DBB4 /* YVButtonCell.swift */; };
+		A74150434CC0122C4B5D505A24AF3448 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEEE4AA3DFE34F9B26F6C441A500FB19 /* YVLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFB18940BCBA8C315790171CA4AF8F4 /* YVLabelCell.xib */; };
+		B1E197C03A21D775F48BE72A7EF53D77 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729053D3B54B81402AC12EA7BDA7D90B /* TPKeyboardAvoiding-dummy.m */; };
+		BF571196DD7414C0455B95F816F01740 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3CDA7CA9FF499FAF0499B6D8E9682D9 /* YVSwiftTableForms-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0825DD194C85D919ED258B493C0D439F /* YVSwiftTableForms-dummy.m */; };
+		C7ABFBA3499A7DFA35670A973FE76B1E /* YVButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61CD9118C5BF694E3A0D9FB51289DB7 /* YVButtonCell.xib */; };
+		DAA505B74F9CE0E53035B15523E5C704 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DBBC37F1374E9E1E6904C026020DF3DF /* Pods-YVSwiftTableForms_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8330CD7503EDD569FD35FA5A2D968760 /* Pods-YVSwiftTableForms_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E37425B147E92E10B7AC843BBCE12ED5 /* YVLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5689B359770F7431DC3A040887E9CA8F /* YVLabelCell.swift */; };
+		E76598A586BB6678AEED532C352F02AA /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED3B1F8C2F4015C6A74AF307E5CC2892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3973E90B2E6090AA4D6E3D10309B022 /* Foundation.framework */; };
+		F7A587E8F7E07E8133C40750F36A2B17 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B7CD71C4B1C61A8C198A3534E88C78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55DFBCA312B581E78B7E0D227FC3D418;
+			remoteInfo = "YVSwiftTableForms-YVSwiftTableForms";
+		};
+		481F6EF3871333BD5CAE8689FF97D734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA70091DE6BF6430C081FB8CCE192EA;
+			remoteInfo = YVSwiftTableForms;
+		};
+		6EF5605B4DDB07D25BA494F348ED3A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C5B2BAC474B64D936267338148F62F;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		D39F7B94D632F467EA28CAE44CAB1678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C5B2BAC474B64D936267338148F62F;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0825DD194C85D919ED258B493C0D439F /* YVSwiftTableForms-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YVSwiftTableForms-dummy.m"; sourceTree = "<group>"; };
+		09CCB1E84513D605D08390DD1B8A4378 /* YVSwiftTableForms.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YVSwiftTableForms.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1A411CB02D2A550181A69899ABD1A0 /* Pods-YVSwiftTableForms_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YVSwiftTableForms_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		12677FAB11A597F95A5554F6B93D7018 /* Pods-YVSwiftTableForms_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YVSwiftTableForms_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		12B17AD2F2E00A7E57270C65C680F33F /* YVTextFieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVTextFieldValidator.swift; sourceTree = "<group>"; };
+		18792BA22F942EE2FB17CB9D8915DBB4 /* YVButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVButtonCell.swift; sourceTree = "<group>"; };
+		1D9C526ECEE921EB230CFE4ED9BB4CF7 /* Pods-YVSwiftTableForms_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YVSwiftTableForms_Tests-umbrella.h"; sourceTree = "<group>"; };
+		274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		421B4D7C40295AA8E2727FF62558AD68 /* ResourceBundle-YVSwiftTableForms-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YVSwiftTableForms-Info.plist"; sourceTree = "<group>"; };
+		4EA122C111DE5A846170A6B251A9EB10 /* YVSwiftTableForms.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YVSwiftTableForms.xcconfig; sourceTree = "<group>"; };
+		50058558026EA132853DD023A680EE40 /* Pods-YVSwiftTableForms_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YVSwiftTableForms_Tests-dummy.m"; sourceTree = "<group>"; };
+		5689B359770F7431DC3A040887E9CA8F /* YVLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVLabelCell.swift; sourceTree = "<group>"; };
+		5BF8162B14477CA4E80F0408DCD72542 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		6555F833C6889E6F77868B4E76FC0480 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65AC6D8E94C701B2ABDAE4871CF616D7 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67457953CCB907E802B95B31186BA105 /* Pods-YVSwiftTableForms_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YVSwiftTableForms_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		729053D3B54B81402AC12EA7BDA7D90B /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		7637A8C0D0E30667A1E8261D056C90E3 /* Pods-YVSwiftTableForms_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YVSwiftTableForms_Tests-resources.sh"; sourceTree = "<group>"; };
+		7D95A1E428B64F506A17A2800369574D /* Pods-YVSwiftTableForms_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YVSwiftTableForms_Example.release.xcconfig"; sourceTree = "<group>"; };
+		80CC50797F7CDC9565C84E319E8BD9CA /* YVTableForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVTableForm.swift; sourceTree = "<group>"; };
+		8330CD7503EDD569FD35FA5A2D968760 /* Pods-YVSwiftTableForms_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YVSwiftTableForms_Example-umbrella.h"; sourceTree = "<group>"; };
+		85588A59CEBE266509EB0FC7F5EEEC7A /* YVTextOnlyInputCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YVTextOnlyInputCell.xib; sourceTree = "<group>"; };
+		8718F1DFA5DD587EA807792D55257BFE /* YVSwiftTableForms-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YVSwiftTableForms-prefix.pch"; sourceTree = "<group>"; };
+		8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		8E9A7F89C56078351412A4D54428E9F3 /* YVSwiftTableForms-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YVSwiftTableForms-umbrella.h"; sourceTree = "<group>"; };
+		9151833A9C4C299E4DF455BE3E0DAD48 /* Pods-YVSwiftTableForms_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YVSwiftTableForms_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		997CDB0B99497D2499713FE4E1A6C4E2 /* Pods-YVSwiftTableForms_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YVSwiftTableForms_Example-dummy.m"; sourceTree = "<group>"; };
+		9FB6D649196C89059654469529E60D7C /* Pods-YVSwiftTableForms_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YVSwiftTableForms_Tests.modulemap"; sourceTree = "<group>"; };
+		A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		A99BF2EE545CD02C04B8BD7F311B8723 /* Pods-YVSwiftTableForms_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YVSwiftTableForms_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AAFB18940BCBA8C315790171CA4AF8F4 /* YVLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YVLabelCell.xib; sourceTree = "<group>"; };
+		AC5523DC9668703A369A251CF86DC4B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC8DD271F16E066F534CB81FC0A52C7 /* Pods_YVSwiftTableForms_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YVSwiftTableForms_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09456C452FE6D106EE95B743A56972A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4923DFBB1EAD8F812BC6A2749E46B2 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		BF9BC98AA77B5FE860DC2732F7E4D8D0 /* YVSwiftTableForms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YVSwiftTableForms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C158B9C4F353943632908501524F7A8E /* YVTextOnlyInputCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVTextOnlyInputCell.swift; sourceTree = "<group>"; };
+		D291EA00335F48BD7179FEF5496A07EE /* YVLabelTextInputCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YVLabelTextInputCell.xib; sourceTree = "<group>"; };
+		D6C7986635C41C56E85702C670BE966C /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74D2F2B167C2FFD38A43C773F5DA02F /* YVTableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVTableSection.swift; sourceTree = "<group>"; };
+		D9D63684CD17CBAF764A7433E3814088 /* Pods-YVSwiftTableForms_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YVSwiftTableForms_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA0A26CB938C5761FB347ADFDDF2AFB1 /* Pods-YVSwiftTableForms_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YVSwiftTableForms_Example-resources.sh"; sourceTree = "<group>"; };
+		DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		E4A0ECA5769B2C235A6A406C8EB531C8 /* Pods-YVSwiftTableForms_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YVSwiftTableForms_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E9040A11DF9C4B8EA0455E19D1A3B069 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EB548B3B25E8DC102834D224426CBA /* YVLabelTextInputCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVLabelTextInputCell.swift; sourceTree = "<group>"; };
+		F293ADE73F765C3E0EFF8F9DBF3CD478 /* Pods-YVSwiftTableForms_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YVSwiftTableForms_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F2CB3DB7270A1B4D0F6C8A8AB906DA54 /* Pods_YVSwiftTableForms_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YVSwiftTableForms_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F386C2F08679D88AE8344BC822F5A76A /* Pods-YVSwiftTableForms_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YVSwiftTableForms_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F3973E90B2E6090AA4D6E3D10309B022 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F6153DA4C8A1CDD17CDCD018BAAC327F /* Pods-YVSwiftTableForms_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YVSwiftTableForms_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F61CD9118C5BF694E3A0D9FB51289DB7 /* YVButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YVButtonCell.xib; sourceTree = "<group>"; };
+		F6AD2FB9010A84237955D0D05DC729CD /* YVTableRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YVTableRow.swift; sourceTree = "<group>"; };
+		F95E7DDE5C71F911F223DD00FD9FA52C /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		FCABA2587B19E0DA8BF93CAA127EE083 /* YVSwiftTableForms.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YVSwiftTableForms.modulemap; sourceTree = "<group>"; };
+		FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		513A1E16082FBED5D3A07E63DE2BBE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E449128CDE3EFC8BFEBD9FF5CF7D96F /* Foundation.framework in Frameworks */,
+				74D2687F41C6496C8305EF38406C6526 /* TPKeyboardAvoiding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69AAFD52145E384BBD31DC92BFF5A228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B596B0819F319B74F9F3CC5C0FD2A68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82406617C97579B0C1AB23507C0CF769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8628B8C4279BFEC91C1CE040DF954268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3B1F8C2F4015C6A74AF307E5CC2892 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2445171FAC2EBD3CEE7D01674CB3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719DA40E0EBB252EE07BF71A7B153112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26B02AB5A3C4CA59476EC03FD556F377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF02B87387107CD7013346F91E0889 /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C8E865F067EA123304811CB88582817 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E89A948F26F8F77407F840EBA061D3F /* YVSwiftTableForms */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2CB15139DFC09FE96D25C9899CDB58D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F61CD9118C5BF694E3A0D9FB51289DB7 /* YVButtonCell.xib */,
+				AAFB18940BCBA8C315790171CA4AF8F4 /* YVLabelCell.xib */,
+				D291EA00335F48BD7179FEF5496A07EE /* YVLabelTextInputCell.xib */,
+				85588A59CEBE266509EB0FC7F5EEEC7A /* YVTextOnlyInputCell.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4286884F21BC492EB265B411A7FE872C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18792BA22F942EE2FB17CB9D8915DBB4 /* YVButtonCell.swift */,
+				5689B359770F7431DC3A040887E9CA8F /* YVLabelCell.swift */,
+				F0EB548B3B25E8DC102834D224426CBA /* YVLabelTextInputCell.swift */,
+				80CC50797F7CDC9565C84E319E8BD9CA /* YVTableForm.swift */,
+				F6AD2FB9010A84237955D0D05DC729CD /* YVTableRow.swift */,
+				D74D2F2B167C2FFD38A43C773F5DA02F /* YVTableSection.swift */,
+				12B17AD2F2E00A7E57270C65C680F33F /* YVTextFieldValidator.swift */,
+				C158B9C4F353943632908501524F7A8E /* YVTextOnlyInputCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		48BF8F17255781F2A6BABEE493236365 /* YVSwiftTableForms */ = {
+			isa = PBXGroup;
+			children = (
+				2CB15139DFC09FE96D25C9899CDB58D2 /* Resources */,
+			);
+			path = YVSwiftTableForms;
+			sourceTree = "<group>";
+		};
+		4E89A948F26F8F77407F840EBA061D3F /* YVSwiftTableForms */ = {
+			isa = PBXGroup;
+			children = (
+				D9A88821BFAAEB4C5792E70AB186D302 /* Resources */,
+				A8FE7BBC6276165774146419D8562548 /* Support Files */,
+				C65F2FB9626462B7789CB1AA4096A5F8 /* YVSwiftTableForms */,
+			);
+			name = YVSwiftTableForms;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5516C6D25988DFCBEE506A02F0FCC816 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6555F833C6889E6F77868B4E76FC0480 /* Info.plist */,
+				F95E7DDE5C71F911F223DD00FD9FA52C /* TPKeyboardAvoiding.modulemap */,
+				274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */,
+				729053D3B54B81402AC12EA7BDA7D90B /* TPKeyboardAvoiding-dummy.m */,
+				BE4923DFBB1EAD8F812BC6A2749E46B2 /* TPKeyboardAvoiding-prefix.pch */,
+				5BF8162B14477CA4E80F0408DCD72542 /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2C8E865F067EA123304811CB88582817 /* Development Pods */,
+				927054A5B8ECF65713E15EC87C34C5D6 /* Frameworks */,
+				26B02AB5A3C4CA59476EC03FD556F377 /* Pods */,
+				C39B6E06F680364D3CB5E9ECECE9EC86 /* Products */,
+				A9554B168DE240D087C6217CFD7C3970 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86D6636B7D0ADA819B5CDC16F5BF48DC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3973E90B2E6090AA4D6E3D10309B022 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		927054A5B8ECF65713E15EC87C34C5D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65AC6D8E94C701B2ABDAE4871CF616D7 /* TPKeyboardAvoiding.framework */,
+				86D6636B7D0ADA819B5CDC16F5BF48DC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8FE7BBC6276165774146419D8562548 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9040A11DF9C4B8EA0455E19D1A3B069 /* Info.plist */,
+				421B4D7C40295AA8E2727FF62558AD68 /* ResourceBundle-YVSwiftTableForms-Info.plist */,
+				FCABA2587B19E0DA8BF93CAA127EE083 /* YVSwiftTableForms.modulemap */,
+				4EA122C111DE5A846170A6B251A9EB10 /* YVSwiftTableForms.xcconfig */,
+				0825DD194C85D919ED258B493C0D439F /* YVSwiftTableForms-dummy.m */,
+				8718F1DFA5DD587EA807792D55257BFE /* YVSwiftTableForms-prefix.pch */,
+				8E9A7F89C56078351412A4D54428E9F3 /* YVSwiftTableForms-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YVSwiftTableForms";
+			sourceTree = "<group>";
+		};
+		A9554B168DE240D087C6217CFD7C3970 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B52B8564D359388E90356B0F75A3A974 /* Pods-YVSwiftTableForms_Example */,
+				EFFFAAF9E68868F531738E0748184AF6 /* Pods-YVSwiftTableForms_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B52B8564D359388E90356B0F75A3A974 /* Pods-YVSwiftTableForms_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B09456C452FE6D106EE95B743A56972A /* Info.plist */,
+				9151833A9C4C299E4DF455BE3E0DAD48 /* Pods-YVSwiftTableForms_Example.modulemap */,
+				0B1A411CB02D2A550181A69899ABD1A0 /* Pods-YVSwiftTableForms_Example-acknowledgements.markdown */,
+				A99BF2EE545CD02C04B8BD7F311B8723 /* Pods-YVSwiftTableForms_Example-acknowledgements.plist */,
+				997CDB0B99497D2499713FE4E1A6C4E2 /* Pods-YVSwiftTableForms_Example-dummy.m */,
+				F293ADE73F765C3E0EFF8F9DBF3CD478 /* Pods-YVSwiftTableForms_Example-frameworks.sh */,
+				DA0A26CB938C5761FB347ADFDDF2AFB1 /* Pods-YVSwiftTableForms_Example-resources.sh */,
+				8330CD7503EDD569FD35FA5A2D968760 /* Pods-YVSwiftTableForms_Example-umbrella.h */,
+				E4A0ECA5769B2C235A6A406C8EB531C8 /* Pods-YVSwiftTableForms_Example.debug.xcconfig */,
+				7D95A1E428B64F506A17A2800369574D /* Pods-YVSwiftTableForms_Example.release.xcconfig */,
+			);
+			name = "Pods-YVSwiftTableForms_Example";
+			path = "Target Support Files/Pods-YVSwiftTableForms_Example";
+			sourceTree = "<group>";
+		};
+		C2BF02B87387107CD7013346F91E0889 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				8DA452346951E7AFE04D3FA6DEEF215D /* TPKeyboardAvoidingCollectionView.h */,
+				A405D45DEFE0A3D269C6622186C957E3 /* TPKeyboardAvoidingCollectionView.m */,
+				DBE9516AC63E7D13D8D499B74E6477A7 /* TPKeyboardAvoidingScrollView.h */,
+				6814AF620C1DA0B641B91F9FDCF7680C /* TPKeyboardAvoidingScrollView.m */,
+				FDA7540DAFBAEBD0F735F7BD3FE5CE4C /* TPKeyboardAvoidingTableView.h */,
+				410310049D2E0760ECAD696C01BC6641 /* TPKeyboardAvoidingTableView.m */,
+				7585CE018D429CC0B8BCEC6FD085541B /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				FD299429537EB2ADD7B2CEC541716456 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				5516C6D25988DFCBEE506A02F0FCC816 /* Support Files */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		C39B6E06F680364D3CB5E9ECECE9EC86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB3DB7270A1B4D0F6C8A8AB906DA54 /* Pods_YVSwiftTableForms_Example.framework */,
+				ADC8DD271F16E066F534CB81FC0A52C7 /* Pods_YVSwiftTableForms_Tests.framework */,
+				D6C7986635C41C56E85702C670BE966C /* TPKeyboardAvoiding.framework */,
+				09CCB1E84513D605D08390DD1B8A4378 /* YVSwiftTableForms.bundle */,
+				BF9BC98AA77B5FE860DC2732F7E4D8D0 /* YVSwiftTableForms.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C65F2FB9626462B7789CB1AA4096A5F8 /* YVSwiftTableForms */ = {
+			isa = PBXGroup;
+			children = (
+				4286884F21BC492EB265B411A7FE872C /* Classes */,
+			);
+			path = YVSwiftTableForms;
+			sourceTree = "<group>";
+		};
+		D9A88821BFAAEB4C5792E70AB186D302 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48BF8F17255781F2A6BABEE493236365 /* YVSwiftTableForms */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EFFFAAF9E68868F531738E0748184AF6 /* Pods-YVSwiftTableForms_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5523DC9668703A369A251CF86DC4B2 /* Info.plist */,
+				9FB6D649196C89059654469529E60D7C /* Pods-YVSwiftTableForms_Tests.modulemap */,
+				F386C2F08679D88AE8344BC822F5A76A /* Pods-YVSwiftTableForms_Tests-acknowledgements.markdown */,
+				D9D63684CD17CBAF764A7433E3814088 /* Pods-YVSwiftTableForms_Tests-acknowledgements.plist */,
+				50058558026EA132853DD023A680EE40 /* Pods-YVSwiftTableForms_Tests-dummy.m */,
+				F6153DA4C8A1CDD17CDCD018BAAC327F /* Pods-YVSwiftTableForms_Tests-frameworks.sh */,
+				7637A8C0D0E30667A1E8261D056C90E3 /* Pods-YVSwiftTableForms_Tests-resources.sh */,
+				1D9C526ECEE921EB230CFE4ED9BB4CF7 /* Pods-YVSwiftTableForms_Tests-umbrella.h */,
+				12677FAB11A597F95A5554F6B93D7018 /* Pods-YVSwiftTableForms_Tests.debug.xcconfig */,
+				67457953CCB907E802B95B31186BA105 /* Pods-YVSwiftTableForms_Tests.release.xcconfig */,
+			);
+			name = "Pods-YVSwiftTableForms_Tests";
+			path = "Target Support Files/Pods-YVSwiftTableForms_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4AA4DF8985C5EBD1563013C5AAD0E652 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22487946B9D95E05D20399ADF38FBA63 /* YVSwiftTableForms-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		702EA9438F6FC7B83AA95E937D8120F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265E87C960F24E436C0AF242B62BA0CA /* Pods-YVSwiftTableForms_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEBC4FBB9533895B2C12CC061107618 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBC37F1374E9E1E6904C026020DF3DF /* Pods-YVSwiftTableForms_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8A02B36BFC147B6A74ECA60C4B92E4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70EC80501C00FFDFBF0C1D49968A4BB2 /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				BF571196DD7414C0455B95F816F01740 /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				102855F0DFA9FA3B8B20A245FA79C62A /* TPKeyboardAvoidingScrollView.h in Headers */,
+				A74150434CC0122C4B5D505A24AF3448 /* TPKeyboardAvoidingTableView.h in Headers */,
+				806AE8A67A008B3553D12F0E63B6F687 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3FCAB04C6338B743EACB219CDF9AAAAD /* Pods-YVSwiftTableForms_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6257EA42BDC241C772E1560E85A7F8BB /* Build configuration list for PBXNativeTarget "Pods-YVSwiftTableForms_Tests" */;
+			buildPhases = (
+				F2A1058F06B80F7CF6468324B2FCA153 /* Sources */,
+				69AAFD52145E384BBD31DC92BFF5A228 /* Frameworks */,
+				702EA9438F6FC7B83AA95E937D8120F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-YVSwiftTableForms_Tests";
+			productName = "Pods-YVSwiftTableForms_Tests";
+			productReference = ADC8DD271F16E066F534CB81FC0A52C7 /* Pods_YVSwiftTableForms_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55DFBCA312B581E78B7E0D227FC3D418 /* YVSwiftTableForms-YVSwiftTableForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632CCA1AB4FC7A448B64991E45E0AC31 /* Build configuration list for PBXNativeTarget "YVSwiftTableForms-YVSwiftTableForms" */;
+			buildPhases = (
+				929277EB2041271B0DA29A620398F5F1 /* Sources */,
+				82406617C97579B0C1AB23507C0CF769 /* Frameworks */,
+				E9359B564EC036BC59BF87F8D33222CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YVSwiftTableForms-YVSwiftTableForms";
+			productName = "YVSwiftTableForms-YVSwiftTableForms";
+			productReference = 09CCB1E84513D605D08390DD1B8A4378 /* YVSwiftTableForms.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		79C5B2BAC474B64D936267338148F62F /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E428B55BD57C868BCB249C00AA325D /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				702773E1CE623FA8C38E78AFE310D67D /* Sources */,
+				BB2445171FAC2EBD3CEE7D01674CB3AE /* Frameworks */,
+				E8A02B36BFC147B6A74ECA60C4B92E4F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = D6C7986635C41C56E85702C670BE966C /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AA70091DE6BF6430C081FB8CCE192EA /* YVSwiftTableForms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2CE2A376CBDB31FE6D0F081126AB66 /* Build configuration list for PBXNativeTarget "YVSwiftTableForms" */;
+			buildPhases = (
+				CBB8E4A8A9F865740A267923F67EFE0D /* Sources */,
+				513A1E16082FBED5D3A07E63DE2BBE74 /* Frameworks */,
+				6BC4465BA0DF3027255BD123346C7B79 /* Resources */,
+				4AA4DF8985C5EBD1563013C5AAD0E652 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E13D9FCBC552EB3A7DC4AB20E2E63DE3 /* PBXTargetDependency */,
+				F9CDA5D398FE0C8737D5F5A6A7E0883D /* PBXTargetDependency */,
+			);
+			name = YVSwiftTableForms;
+			productName = YVSwiftTableForms;
+			productReference = BF9BC98AA77B5FE860DC2732F7E4D8D0 /* YVSwiftTableForms.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3675183236730B679DF9C6419EADD22 /* Pods-YVSwiftTableForms_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10947801F2684377E0D32E93E8344655 /* Build configuration list for PBXNativeTarget "Pods-YVSwiftTableForms_Example" */;
+			buildPhases = (
+				3DD682286DE14A965C00A630D8D9F168 /* Sources */,
+				8628B8C4279BFEC91C1CE040DF954268 /* Frameworks */,
+				9CEBC4FBB9533895B2C12CC061107618 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E92B76195225719DBC1AE9DFA5CDC9 /* PBXTargetDependency */,
+				99C103E4379F0147D30F8BDEF5E948A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-YVSwiftTableForms_Example";
+			productName = "Pods-YVSwiftTableForms_Example";
+			productReference = F2CB3DB7270A1B4D0F6C8A8AB906DA54 /* Pods_YVSwiftTableForms_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C39B6E06F680364D3CB5E9ECECE9EC86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3675183236730B679DF9C6419EADD22 /* Pods-YVSwiftTableForms_Example */,
+				3FCAB04C6338B743EACB219CDF9AAAAD /* Pods-YVSwiftTableForms_Tests */,
+				79C5B2BAC474B64D936267338148F62F /* TPKeyboardAvoiding */,
+				9AA70091DE6BF6430C081FB8CCE192EA /* YVSwiftTableForms */,
+				55DFBCA312B581E78B7E0D227FC3D418 /* YVSwiftTableForms-YVSwiftTableForms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BC4465BA0DF3027255BD123346C7B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669A451435ED2BBDE29778EE28DF36B9 /* YVSwiftTableForms.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9359B564EC036BC59BF87F8D33222CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7ABFBA3499A7DFA35670A973FE76B1E /* YVButtonCell.xib in Resources */,
+				AEEE4AA3DFE34F9B26F6C441A500FB19 /* YVLabelCell.xib in Resources */,
+				1385C9F1592D20AF96F2FC30363FEC2F /* YVLabelTextInputCell.xib in Resources */,
+				09F18287FCB0A7D401B49C82580852BF /* YVTextOnlyInputCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD682286DE14A965C00A630D8D9F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016D615A5A2BB590840746799097520A /* Pods-YVSwiftTableForms_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		702773E1CE623FA8C38E78AFE310D67D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E197C03A21D775F48BE72A7EF53D77 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				DAA505B74F9CE0E53035B15523E5C704 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				E76598A586BB6678AEED532C352F02AA /* TPKeyboardAvoidingScrollView.m in Sources */,
+				63B2F7D81A1CF18CC5A330CB67A021A6 /* TPKeyboardAvoidingTableView.m in Sources */,
+				F7A587E8F7E07E8133C40750F36A2B17 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929277EB2041271B0DA29A620398F5F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB8E4A8A9F865740A267923F67EFE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E96A1D7D91C90FE7118E55AAB5347F4 /* YVButtonCell.swift in Sources */,
+				E37425B147E92E10B7AC843BBCE12ED5 /* YVLabelCell.swift in Sources */,
+				512EF8A906E40EC317264142FD9E9BBD /* YVLabelTextInputCell.swift in Sources */,
+				C3CDA7CA9FF499FAF0499B6D8E9682D9 /* YVSwiftTableForms-dummy.m in Sources */,
+				040A9CC45F61479E8042706C77309F85 /* YVTableForm.swift in Sources */,
+				535FAE4FCB97FCDA13DC4804FD42B6EA /* YVTableRow.swift in Sources */,
+				71AEF9DBD6A5970DD3746902C5FCD5D7 /* YVTableSection.swift in Sources */,
+				729A44EDD3DB3F76755BA7BEFC3C8F6A /* YVTextFieldValidator.swift in Sources */,
+				89ADA83F6E8073798219BA1110793B3E /* YVTextOnlyInputCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1058F06B80F7CF6468324B2FCA153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4884AF48C388BC388CF2E2F938F63C67 /* Pods-YVSwiftTableForms_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50E92B76195225719DBC1AE9DFA5CDC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 79C5B2BAC474B64D936267338148F62F /* TPKeyboardAvoiding */;
+			targetProxy = D39F7B94D632F467EA28CAE44CAB1678 /* PBXContainerItemProxy */;
+		};
+		99C103E4379F0147D30F8BDEF5E948A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YVSwiftTableForms;
+			target = 9AA70091DE6BF6430C081FB8CCE192EA /* YVSwiftTableForms */;
+			targetProxy = 481F6EF3871333BD5CAE8689FF97D734 /* PBXContainerItemProxy */;
+		};
+		E13D9FCBC552EB3A7DC4AB20E2E63DE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 79C5B2BAC474B64D936267338148F62F /* TPKeyboardAvoiding */;
+			targetProxy = 6EF5605B4DDB07D25BA494F348ED3A79 /* PBXContainerItemProxy */;
+		};
+		F9CDA5D398FE0C8737D5F5A6A7E0883D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YVSwiftTableForms-YVSwiftTableForms";
+			target = 55DFBCA312B581E78B7E0D227FC3D418 /* YVSwiftTableForms-YVSwiftTableForms */;
+			targetProxy = 2B7CD71C4B1C61A8C198A3534E88C78E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B2E9FFA1F26EDA6098476C7C2DDA058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D95A1E428B64F506A17A2800369574D /* Pods-YVSwiftTableForms_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YVSwiftTableForms_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YVSwiftTableForms_Example/Pods-YVSwiftTableForms_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YVSwiftTableForms_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0CD24B47AB191254625E15CD716BCC49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA122C111DE5A846170A6B251A9EB10 /* YVSwiftTableForms.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YVSwiftTableForms";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/YVSwiftTableForms/ResourceBundle-YVSwiftTableForms-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = YVSwiftTableForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		13C4C3B9118A8EE24C8542B4BE872376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F995FE3349326AAC4AC97FBF7311F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA122C111DE5A846170A6B251A9EB10 /* YVSwiftTableForms.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YVSwiftTableForms/YVSwiftTableForms-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YVSwiftTableForms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YVSwiftTableForms/YVSwiftTableForms.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YVSwiftTableForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84994451F7C57F39969BE88B16692539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274781B65B86E4D407A405EF58F4F7C3 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91B3171DC92373E9155A1F1F7CC8DE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A0ECA5769B2C235A6A406C8EB531C8 /* Pods-YVSwiftTableForms_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YVSwiftTableForms_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YVSwiftTableForms_Example/Pods-YVSwiftTableForms_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YVSwiftTableForms_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3A0533C4533E04C2248B164B768475B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA122C111DE5A846170A6B251A9EB10 /* YVSwiftTableForms.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YVSwiftTableForms";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/YVSwiftTableForms/ResourceBundle-YVSwiftTableForms-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = YVSwiftTableForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BBC04E4C2B1E304D505CDF4C421BBE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA122C111DE5A846170A6B251A9EB10 /* YVSwiftTableForms.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YVSwiftTableForms/YVSwiftTableForms-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YVSwiftTableForms/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YVSwiftTableForms/YVSwiftTableForms.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YVSwiftTableForms;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C154DCDC78CFAC56C94B2A545AD87876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12677FAB11A597F95A5554F6B93D7018 /* Pods-YVSwiftTableForms_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YVSwiftTableForms_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YVSwiftTableForms_Tests/Pods-YVSwiftTableForms_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YVSwiftTableForms_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E898F45F8BC2CAD678D36B4752AF32A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67457953CCB907E802B95B31186BA105 /* Pods-YVSwiftTableForms_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YVSwiftTableForms_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YVSwiftTableForms_Tests/Pods-YVSwiftTableForms_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YVSwiftTableForms_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10947801F2684377E0D32E93E8344655 /* Build configuration list for PBXNativeTarget "Pods-YVSwiftTableForms_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B3171DC92373E9155A1F1F7CC8DE85 /* Debug */,
+				0B2E9FFA1F26EDA6098476C7C2DDA058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6257EA42BDC241C772E1560E85A7F8BB /* Build configuration list for PBXNativeTarget "Pods-YVSwiftTableForms_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C154DCDC78CFAC56C94B2A545AD87876 /* Debug */,
+				E898F45F8BC2CAD678D36B4752AF32A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		632CCA1AB4FC7A448B64991E45E0AC31 /* Build configuration list for PBXNativeTarget "YVSwiftTableForms-YVSwiftTableForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A0533C4533E04C2248B164B768475B /* Debug */,
+				0CD24B47AB191254625E15CD716BCC49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E428B55BD57C868BCB249C00AA325D /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C4C3B9118A8EE24C8542B4BE872376 /* Debug */,
+				84994451F7C57F39969BE88B16692539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2CE2A376CBDB31FE6D0F081126AB66 /* Build configuration list for PBXNativeTarget "YVSwiftTableForms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC04E4C2B1E304D505CDF4C421BBE56 /* Debug */,
+				6F995FE3349326AAC4AC97FBF7311F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
