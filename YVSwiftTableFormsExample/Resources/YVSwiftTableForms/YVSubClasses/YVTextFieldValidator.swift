@@ -8,11 +8,11 @@
 
 import UIKit
 
-let numberCharacterSet = NSCharacterSet.decimalDigitCharacterSet()
+let numberCharacterSet = CharacterSet.decimalDigits
 
-let alphabetCharacterSet : NSCharacterSet = NSCharacterSet(charactersInString: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+let alphabetCharacterSet : CharacterSet = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-let specialSymbolsCharacterSet : NSCharacterSet = NSCharacterSet(charactersInString: "!~`@#$%^&*-+();:=_{}[],.<>?\\/|\"\'")
+let specialSymbolsCharacterSet : CharacterSet = CharacterSet(charactersIn: "!~`@#$%^&*-+();:=_{}[],.<>?\\/|\"\'")
 
 class YVTextFieldValidator: UITextField, UITextFieldDelegate {
 
@@ -58,9 +58,9 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     // 01. This method will check if there are any blank textFields in class
     
-    class func checkIfAllFieldsAreFilled(view:UIView) -> Bool{
+    class func checkIfAllFieldsAreFilled(_ view:UIView) -> Bool{
         
-        let subviews : NSArray = view.subviews
+        let subviews : NSArray = view.subviews as NSArray
         if(subviews.count == 0){
             return false
         }
@@ -80,20 +80,20 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     // 02. This method will check if there are any white space in the textField.
     
-    class  func checkForWhiteSpaceInTextField(inputString : String) -> String{
+    class  func checkForWhiteSpaceInTextField(_ inputString : String) -> String{
         
-        let trimmedString = inputString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let trimmedString = inputString.trimmingCharacters(in: CharacterSet.whitespaces)
         
         return trimmedString
     }
     
     // 03. This method will allow only numbers in the textField.
     
-    func allowOnlyNumbersInTextField(string : String)->Bool{
+    func allowOnlyNumbersInTextField(_ string : String)->Bool{
         
-        let numberCharacterSet = NSCharacterSet.decimalDigitCharacterSet()
+        let numberCharacterSet = CharacterSet.decimalDigits
         let inputString = string
-        let range = inputString.rangeOfCharacterFromSet(numberCharacterSet)
+        let range = inputString.rangeOfCharacter(from: numberCharacterSet)
         print(inputString)
         
         // range will be nil if no numbers are found
@@ -110,10 +110,10 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     // 04. This method will allow only alphabets in the textField.
     
-    func allowOnlyAlphabetsInTextField(string : String)->Bool{
+    func allowOnlyAlphabetsInTextField(_ string : String)->Bool{
         
         let inputString = string
-        let range = inputString.rangeOfCharacterFromSet(alphabetCharacterSet)
+        let range = inputString.rangeOfCharacter(from: alphabetCharacterSet)
         print(inputString)
         // range will be nil if no alphabet are found
         if range != nil {
@@ -131,9 +131,9 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     // 05. This method will restrict only special symbols in the textField.
     
-    func restrictSpecialSymbols(string : String) -> Bool
+    func restrictSpecialSymbols(_ string : String) -> Bool
     {
-        let range = string.rangeOfCharacterFromSet(specialSymbolsCharacterSet.invertedSet)
+        let range = string.rangeOfCharacter(from: specialSymbolsCharacterSet.inverted)
         print(string)
         // range will be nil if no specialSymbol are found
         if range != nil {
@@ -151,16 +151,16 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     
     //MARK: UITextFieldDelegate
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if(checkForValidEmailAddress){
             let emailReg = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
-            let range = textField.text!.rangeOfString(emailReg, options:.RegularExpressionSearch)
+            let range = textField.text!.range(of: emailReg, options:.regularExpression)
             let result = range != nil ? true : false
             print(result)
             if(result){
                 ParentDelegate as! UIViewController
-                ParentDelegate!.presentViewController(alertControllerForInvalidEmailAddress, animated: true, completion: nil)
+                ParentDelegate!.present(alertControllerForInvalidEmailAddress, animated: true, completion: nil)
                 return false
             }
         }
@@ -168,7 +168,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     }
     
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if(allowOnlyNumbers){
             if(string == ""){
@@ -181,7 +181,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
             else{
                 if(allowToShowAlertView){
                     ParentDelegate as! UIViewController
-                    ParentDelegate!.presentViewController(alertControllerForNumberOnly, animated: true, completion: nil)
+                    ParentDelegate!.present(alertControllerForNumberOnly, animated: true, completion: nil)
                     return false
                 }
                 
@@ -203,7 +203,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
             else {
                 if(allowToShowAlertView) {
                     ParentDelegate as! UIViewController
-                    ParentDelegate!.presentViewController(alertControllerForAlphabetsOnly, animated: true, completion: nil)
+                    ParentDelegate!.present(alertControllerForAlphabetsOnly, animated: true, completion: nil)
                     return false
                 }
                 
@@ -222,7 +222,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
                 
                 if(allowToShowAlertView){
                     ParentDelegate as! UIViewController
-                    ParentDelegate!.presentViewController(alertControllerForSpecialSymbols, animated: true, completion: nil)
+                    ParentDelegate!.present(alertControllerForSpecialSymbols, animated: true, completion: nil)
                     return false
                 }
                 
@@ -242,20 +242,20 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     }
     
     //MARK: Setter methods
-    func setFlagForAllowNumbersOnly(flagForNumbersOnly : Bool){
+    func setFlagForAllowNumbersOnly(_ flagForNumbersOnly : Bool){
         allowOnlyNumbers = flagForNumbersOnly
     }
-    func setFlagForAllowAlphabetsOnly(flagForAlphabetsOnly : Bool){
+    func setFlagForAllowAlphabetsOnly(_ flagForAlphabetsOnly : Bool){
         allowOnlyAlphabets = flagForAlphabetsOnly
     }
-    func setFlagForRestrictSpecialSymbolsOnly(RestrictSpecialSymbols : Bool){
+    func setFlagForRestrictSpecialSymbolsOnly(_ RestrictSpecialSymbols : Bool){
         restrictSpecialSymbolsOnly = RestrictSpecialSymbols
     }
-    func setFlagForcheckForValidEmailAddressOnly(flagForValidEmailAddress : Bool){
+    func setFlagForcheckForValidEmailAddressOnly(_ flagForValidEmailAddress : Bool){
         checkForValidEmailAddress = flagForValidEmailAddress
     }
     
-    func setFlagForLimitedNumbersOFCharecters(numberOfCharacters : Int,flagForLimitedNumbersOfCharacters : Bool){
+    func setFlagForLimitedNumbersOFCharecters(_ numberOfCharacters : Int,flagForLimitedNumbersOfCharacters : Bool){
         restrictTextFieldToLimitedCharecters = flagForLimitedNumbersOfCharacters
         setNumberOfCharectersToBeRestricted = numberOfCharacters
     }
@@ -264,19 +264,19 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     //MARK: show alert methods
     
-    func showAlertForNumberOnly(title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
+    func showAlertForNumberOnly(_ title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
         
-        alertControllerForNumberOnly = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertControllerForNumberOnly = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         for i in 0  ..< buttonActions.count {
             
             let count = i
             
-            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.default, handler: { (UIAlertAction) -> Void in
                 if(buttonActions.count > 0){
                     let methodName = buttonActions[count] as! String
                     print(methodName)
-                    NSTimer.scheduledTimerWithTimeInterval(0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
+                    Timer.scheduledTimer(timeInterval: 0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
                 }
             })
             alertControllerForNumberOnly.addAction(buttonAction)
@@ -284,20 +284,20 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
         
     }
     
-    func showAlertForAlphabetsOnly(title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
+    func showAlertForAlphabetsOnly(_ title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
         
-        alertControllerForAlphabetsOnly = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertControllerForAlphabetsOnly = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         for i in 0  ..< buttonActions.count {
             
             let count = i
             
-            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.default, handler: { (UIAlertAction) -> Void in
                 
                 if(buttonActions.count > 0){
                     let methodName = buttonActions[count] as! String
                     print(methodName)
-                    NSTimer.scheduledTimerWithTimeInterval(0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
+                    Timer.scheduledTimer(timeInterval: 0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
                 }
                 
                 
@@ -307,20 +307,20 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
         
     }
     
-    func showAlertForSpecialSymbolsOnly(title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
+    func showAlertForSpecialSymbolsOnly(_ title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
         
-        alertControllerForSpecialSymbols = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertControllerForSpecialSymbols = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         for i in 0  ..< buttonActions.count {
             
             let count = i
             
-            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.default, handler: { (UIAlertAction) -> Void in
                 
                 if(buttonActions.count > 0){
                     let methodName = buttonActions[count] as! String
                     print(methodName)
-                    NSTimer.scheduledTimerWithTimeInterval(0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
+                    Timer.scheduledTimer(timeInterval: 0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
                 }
                 
                 
@@ -329,19 +329,19 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
         }
     }
     
-    func showAlertForinvalidEmailAddrress(title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
+    func showAlertForinvalidEmailAddrress(_ title: String, message: String, buttonTitles : NSArray, buttonActions: NSArray){
         
-        alertControllerForInvalidEmailAddress = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertControllerForInvalidEmailAddress = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         for i in 0  ..< buttonActions.count {
             
             let count = i
-            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            let buttonAction = UIAlertAction(title: buttonTitles[count] as? String, style: UIAlertActionStyle.default, handler: { (UIAlertAction) -> Void in
                 
                 if(buttonActions.count > 0){
                     let methodName = buttonActions[count] as! String
                     print(methodName)
-                    NSTimer.scheduledTimerWithTimeInterval(0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
+                    Timer.scheduledTimer(timeInterval: 0, target: self.ParentDelegate as! UIViewController, selector: Selector(methodName), userInfo: nil, repeats: false)
                 }
                 
                 
@@ -353,22 +353,22 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     
     //MARK: Shake TextField
     
-    class  func shaketextField(textfield : UITextField) {
+    class  func shaketextField(_ textfield : UITextField) {
         
         let shake:CABasicAnimation = CABasicAnimation(keyPath: "position")
         shake.duration = 0.1
         shake.repeatCount = 2
         shake.autoreverses = true
         
-        let from_point:CGPoint = CGPointMake(textfield.center.x - 5, textfield.center.y)
-        let from_value:NSValue = NSValue(CGPoint: from_point)
+        let from_point:CGPoint = CGPoint(x: textfield.center.x - 5, y: textfield.center.y)
+        let from_value:NSValue = NSValue(cgPoint: from_point)
         
-        let to_point:CGPoint = CGPointMake(textfield.center.x + 5, textfield.center.y)
-        let to_value:NSValue = NSValue(CGPoint: to_point)
+        let to_point:CGPoint = CGPoint(x: textfield.center.x + 5, y: textfield.center.y)
+        let to_value:NSValue = NSValue(cgPoint: to_point)
         
         shake.fromValue = from_value
         shake.toValue = to_value
-        textfield.layer.addAnimation(shake, forKey: "position")
+        textfield.layer.add(shake, forKey: "position")
         
     }
     

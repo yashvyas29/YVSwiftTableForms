@@ -74,7 +74,7 @@ class ViewController: YVTableForm {
         row = YVTableRow()
         row.type = YVRowType.TextOnlyInput
         row.text = "Designation"
-        row.separatorColor = UIColor.clearColor()
+        row.separatorColor = UIColor.clear
         self.appendRow(row, toSection: 1)
         
         
@@ -86,16 +86,16 @@ class ViewController: YVTableForm {
         row.type = YVRowType.Button
         row.text = "Submit"
 //        row.textColor = UIColor.redColor()
-        row.textFont = UIFont.boldSystemFontOfSize(16)
+        row.textFont = UIFont.boldSystemFont(ofSize: 16)
         self.appendRow(row, toSection: 2)
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath);
-        if cell.isKindOfClass(YVTextOnlyInputCell) {
+        var cell = super.tableView(tableView, cellForRowAt: indexPath);
+        if cell.isKind(of: YVTextOnlyInputCell.self) {
             let textInputCell = cell as! YVTextOnlyInputCell
-            textInputCell.textField.borderStyle = .Bezel
+            textInputCell.textField.borderStyle = .bezel
             cell = textInputCell
         }
         return cell;
@@ -106,7 +106,7 @@ class ViewController: YVTableForm {
         for arrSection in self.arrRows {
             if arrSection != nil {
                 for row: YVTableRow? in arrSection! {
-                    if let text = row?.text, value = row?.value {
+                    if let text = row?.text, let value = row?.value {
                         print("\(text) : \(value)")
                     } else {
                         if let text = row?.text {

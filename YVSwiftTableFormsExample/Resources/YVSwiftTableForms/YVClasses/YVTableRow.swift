@@ -21,7 +21,7 @@ class YVTableRow: NSObject {
     var type: YVRowType = YVRowType.TextOnlyInput
     var text: String?
     var value: String?
-    var indexPath: NSIndexPath?
+    var indexPath: IndexPath?
     var height: CGFloat?
     var inputTextColor: UIColor?
     var inputTextFont: UIFont?

@@ -7,6 +7,30 @@
 //
 
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,12 +47,12 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
             tblForm?.tableHeaderView = UIView()
             tblForm?.tableFooterView = UIView()
             
-            tblForm?.separatorStyle = .None
+            tblForm?.separatorStyle = .none
             
-            tblForm?.registerNib(UINib.init(nibName: "YV"+YVRowType.TextOnlyInput.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.TextOnlyInput.rawValue)
-            tblForm?.registerNib(UINib.init(nibName: "YV"+YVRowType.LabelTextInput.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.LabelTextInput.rawValue)
-            tblForm?.registerNib(UINib.init(nibName: "YV"+YVRowType.Button.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.Button.rawValue)
-            tblForm?.registerNib(UINib.init(nibName: "YV"+YVRowType.Label.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.Label.rawValue)
+            tblForm?.register(UINib.init(nibName: "YV"+YVRowType.TextOnlyInput.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.TextOnlyInput.rawValue)
+            tblForm?.register(UINib.init(nibName: "YV"+YVRowType.LabelTextInput.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.LabelTextInput.rawValue)
+            tblForm?.register(UINib.init(nibName: "YV"+YVRowType.Button.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.Button.rawValue)
+            tblForm?.register(UINib.init(nibName: "YV"+YVRowType.Label.rawValue+"Cell", bundle: nil), forCellReuseIdentifier: YVRowType.Label.rawValue)
         }
     }
     
@@ -56,7 +80,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     // Mark: - Methods
     
-    func appendSection(section: YVTableSection?) {
+    func appendSection(_ section: YVTableSection?) {
         
         if arrSections.count == 0 && arrRows.count > 0 {
             let arrSection: [YVTableRow?]? = arrRows[0]
@@ -67,7 +91,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
         arrSections.append(section)
     }
     
-    func updateSection(section: YVTableSection?, atIndex: Int) {
+    func updateSection(_ section: YVTableSection?, atIndex: Int) {
         
         if atIndex < arrSections.count {
             
@@ -90,7 +114,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
-    func appendRow(row: YVTableRow, toSection: Int = 0) {
+    func appendRow(_ row: YVTableRow, toSection: Int = 0) {
         
         if arrSections.count == 0 {
             
@@ -121,14 +145,14 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     // MARK: - Table View Delegate
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         
         let sections = arrSections.count > 0 ? arrSections.count : 1
         return sections
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if arrRows.count > 0 && section < arrRows.count {
             let arrSection: [YVTableRow?]? = arrRows[section]
@@ -139,7 +163,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var arrSection: [YVTableRow?]? = arrRows[indexPath.section]
         let row: YVTableRow = (arrSection?[indexPath.row])!
@@ -153,8 +177,8 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
         case .TextOnlyInput:
             
-            let textOnlyInputCell = tableView.dequeueReusableCellWithIdentifier(YVRowType.TextOnlyInput.rawValue) as! YVTextOnlyInputCell
-            textOnlyInputCell.textField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), forControlEvents: .EditingChanged)
+            let textOnlyInputCell = tableView.dequeueReusableCell(withIdentifier: YVRowType.TextOnlyInput.rawValue) as! YVTextOnlyInputCell
+            textOnlyInputCell.textField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
             
             if let text = row.text {
                 textOnlyInputCell.textField.placeholder = text
@@ -187,8 +211,8 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
         case .LabelTextInput:
             
-            let labelTextInputCell = tableView.dequeueReusableCellWithIdentifier(YVRowType.LabelTextInput.rawValue) as! YVLabelTextInputCell
-            labelTextInputCell.txtValue.addTarget(self, action: #selector(self.textFieldDidChange(_:)), forControlEvents: .EditingChanged)
+            let labelTextInputCell = tableView.dequeueReusableCell(withIdentifier: YVRowType.LabelTextInput.rawValue) as! YVLabelTextInputCell
+            labelTextInputCell.txtValue.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
             
             if let text = row.text {
                 labelTextInputCell.lblTitle.text = text
@@ -230,11 +254,11 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
         case .Button:
             
-            let buttonCell = tableView.dequeueReusableCellWithIdentifier(YVRowType.Button.rawValue) as! YVButtonCell
-            buttonCell.button.addTarget(self, action: #selector(self.buttonCellAction), forControlEvents: .TouchUpInside)
+            let buttonCell = tableView.dequeueReusableCell(withIdentifier: YVRowType.Button.rawValue) as! YVButtonCell
+            buttonCell.button.addTarget(self, action: #selector(self.buttonCellAction), for: .touchUpInside)
             
             if let text = row.text {
-                buttonCell.button.setTitle(text, forState: .Normal)
+                buttonCell.button.setTitle(text, for: UIControlState())
             }
             if let strBackgroundImage = row.backgroundImageName {
                 buttonCell.imgVwSeparator.image = UIImage(named: strBackgroundImage)
@@ -245,7 +269,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
                 buttonCell.imgVwSeparator.image = UIImage(named: strSeparatorImage)
             }
             if let textColor = row.textColor {
-                buttonCell.button.setTitleColor(textColor, forState: .Normal)
+                buttonCell.button.setTitleColor(textColor, for: UIControlState())
             }
             if let textAlignment = row.textAlignment {
                 buttonCell.button.titleLabel?.textAlignment = textAlignment
@@ -264,7 +288,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
         case .Label:
             
-            let labelCell = tableView.dequeueReusableCellWithIdentifier(YVRowType.Label.rawValue) as! YVLabelCell
+            let labelCell = tableView.dequeueReusableCell(withIdentifier: YVRowType.Label.rawValue) as! YVLabelCell
             
             if let text = row.text {
                 labelCell.textLabel?.text = text
@@ -296,19 +320,19 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
             break
         }
         
-        cell.selectionStyle = .None
-        cell.layoutMargins = UIEdgeInsetsZero
-        cell.separatorInset = UIEdgeInsetsZero
+        cell.selectionStyle = .none
+        cell.layoutMargins = UIEdgeInsets.zero
+        cell.separatorInset = UIEdgeInsets.zero
         
         return cell
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let section: YVTableSection? = section < arrSections.count ? arrSections[section] : nil
         return section?.text
     }
     
-    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView = view as! UITableViewHeaderFooterView
         let section: YVTableSection? = section < arrSections.count ? arrSections[section] : nil
         
@@ -328,7 +352,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
         }
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         let section: YVTableSection? = section < arrSections.count ? arrSections[section] : nil
         if let height = section?.height {
@@ -341,7 +365,7 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var arrSection: [YVTableRow?]? = arrRows[indexPath.section]
         let row: YVTableRow = (arrSection?[indexPath.row])!
         return row.height != nil ? (row.height)! : 44
@@ -354,9 +378,9 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
-    func textFieldDidChange(textField: UITextField) {
-        let point: CGPoint? = textField.convertPoint(CGPointZero, toView: self.tblForm)
-        let indexPath: NSIndexPath = self.tblForm!.indexPathForRowAtPoint(point!)!
+    func textFieldDidChange(_ textField: UITextField) {
+        let point: CGPoint? = textField.convert(CGPoint.zero, to: self.tblForm)
+        let indexPath: IndexPath = self.tblForm!.indexPathForRow(at: point!)!
         
         var arrSection: [YVTableRow?]? = arrRows[indexPath.section]
         let row: YVTableRow = (arrSection?[indexPath.row])!

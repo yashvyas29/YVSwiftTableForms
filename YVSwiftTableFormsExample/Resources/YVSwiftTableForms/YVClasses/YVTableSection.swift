@@ -9,7 +9,7 @@
 import UIKit
 
 enum YVSectionType {
-    case Label, Button
+    case label, button
 }
 
 class YVTableSection: NSObject {
