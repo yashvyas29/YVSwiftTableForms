@@ -374,11 +374,11 @@ class YVTableForm: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     // MARK: - Actions
     
-    func buttonCellAction() {
+    @objc func buttonCellAction() {
         
     }
     
-    func textFieldDidChange(_ textField: UITextField) {
+    @objc func textFieldDidChange(_ textField: UITextField) {
         let point: CGPoint? = textField.convert(CGPoint.zero, to: self.tblForm)
         let indexPath: IndexPath = self.tblForm!.indexPathForRow(at: point!)!
         

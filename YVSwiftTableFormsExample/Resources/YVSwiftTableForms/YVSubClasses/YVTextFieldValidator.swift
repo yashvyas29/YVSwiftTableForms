@@ -57,7 +57,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
     //MARK: validation methods
     
     // 01. This method will check if there are any blank textFields in class
-    
+    @discardableResult
     class func checkIfAllFieldsAreFilled(_ view:UIView) -> Bool{
         
         let subviews : NSArray = view.subviews as NSArray
@@ -158,8 +158,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
             let range = textField.text!.range(of: emailReg, options:.regularExpression)
             let result = range != nil ? true : false
             print(result)
-            if(result){
-                ParentDelegate as! UIViewController
+            if (result) {
                 ParentDelegate!.present(alertControllerForInvalidEmailAddress, animated: true, completion: nil)
                 return false
             }
@@ -180,7 +179,6 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
             }
             else{
                 if(allowToShowAlertView){
-                    ParentDelegate as! UIViewController
                     ParentDelegate!.present(alertControllerForNumberOnly, animated: true, completion: nil)
                     return false
                 }
@@ -202,7 +200,6 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
             }
             else {
                 if(allowToShowAlertView) {
-                    ParentDelegate as! UIViewController
                     ParentDelegate!.present(alertControllerForAlphabetsOnly, animated: true, completion: nil)
                     return false
                 }
@@ -221,7 +218,6 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
             else{
                 
                 if(allowToShowAlertView){
-                    ParentDelegate as! UIViewController
                     ParentDelegate!.present(alertControllerForSpecialSymbols, animated: true, completion: nil)
                     return false
                 }
@@ -231,7 +227,7 @@ class YVTextFieldValidator: UITextField, UITextFieldDelegate {
         }
         else if(restrictTextFieldToLimitedCharecters){
             
-            let newLength = textField.text!.characters.count + string.characters.count - range.length
+            let newLength = textField.text!.count + string.count - range.length
             return newLength <= setNumberOfCharectersToBeRestricted
         }
             
